@@ -1,0 +1,10 @@
+let edad = prompt('Ingrese su edad : ')
+    if (edad > 1 && edad <=120){
+        if (edad >18 ){
+            alert('Ud puede ingresar.')
+        } else {
+        alert('Ud es menor de edad.')
+    }
+}else{
+      alert('Lo sentimos en dato que has ingreado no es valido')
+    }
