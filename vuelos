@@ -1,0 +1,18 @@
+let origen = prompt('ciudad de origen ?', '0');
+let destino = prompt('ciudad de destino?', '0');
+const precioVuelo = 1500
+
+if (origen == 'palma') 
+    if (destino == 'barcelona'){
+        descuento = 5;
+        alert('Para ese destino tenemos un descuento especial de '+ descuento +'%' + ' tu pasaje queda con un valor especial de ' + (precioVuelo*0.95));
+    } else if (destino == 'madrid'){
+        descuento = 10;
+        alert('Para ese destino tenemos un descuento especial de '+ descuento +'%' + ' tu pasaje queda con un valor especial de ' + (precioVuelo*0.90));
+    } else  if (destino == 'valencia'){ 
+        descuento = 15;
+        alert('Para ese destino tenemos un descuento especial de '+ descuento +'%' + ' tu pasaje queda con un valor especial de ' + (precioVuelo*0.85));
+    } 
+    else {
+        alert('Para ese destino tenemos no hay descuentos disponibles.');
+    }
