@@ -1,0 +1,83 @@
+function tabla(numero=Number) {
+    for (i = 0; i <= numero; i++){
+        console.log(`${numero} * ${i} = ${numero * i}`);
+    }
+}
+function tablaD(tabla = Number, limite = Number) {
+    for (i = 0; i <= limite; i++){
+        console.log(`${tabla} * ${i} = ${tabla*i}//`)
+    }
+}
+function tablaT(tabla = Number, limite = 10) {
+    for (i = 0; i <= limite; i++){
+        console.log(`${tabla} * ${i} = ${tabla*i}//`)
+    }
+}
+function operacionMat(op = String, valorA = Number, valorB = Number)
+{
+    switch (op) {
+        case '+':
+            return valorA + valorB;
+      
+        case '-':
+            return valorA - valorB;
+        
+        case '*':
+            return valorA * valorB;
+       
+        case '%':
+            return valorA % valorB;
+       
+    }
+}
+const resultado = function operacionMat(op = String, valorA = Number, valorB = Number)
+{
+    switch (op) {
+        case '+':
+            return valorA + valorB;
+      
+        case '-':
+            return valorA - valorB;
+        
+        case '*':
+            return valorA * valorB;
+       
+        case '%':
+            return valorA % valorB;
+       
+    }
+}
+const operacion = function (op = String, valorA = Number, valorB = Number)
+{
+        switch (op) {
+            case '+':
+                return valorA + valorB;
+          
+            case '-':
+                return valorA - valorB;
+            
+            case '*':
+                return valorA * valorB;
+           
+            case '%':
+                return valorA % valorB;
+        }
+            
+    }
+
+tabla(parseInt(prompt('Ingrese un numero :')))
+console.log('*************')
+tablaD(4, 10);
+console.log('*************')
+tablaT(6);
+console.log('*************')
+console.log(operacionMat('+', 3, 4));
+console.log(typeof (operacionMat('+', 3, 4)));
+console.log('*************')
+console.log(resultado('+', 13, 4));
+console.log('*************')
+console.log(operacion('+', 13, 14));
+
+
+
+
