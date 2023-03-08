@@ -1,0 +1,21 @@
+const fecha = "25/02/2022";
+const separador = "/";
+
+switch (separador) {
+  case "/":
+    const partes = fecha.split("/");
+    if (partes.length !== 3) {
+      console.log("El formato de la fecha no es válido");
+    } else {
+      const dia = parseInt(partes[0]);
+      const mes = parseInt(partes[1]);
+      const anio = parseInt(partes[2]);
+      console.log(`Fecha válida: ${dia}/${mes}/${anio}`);
+    }
+    break;
+  case "-":
+    // código para validar el formato "dd-mm-aaaa"
+    break;
+  default:
+    console.log("El separador no es válido");
+}
