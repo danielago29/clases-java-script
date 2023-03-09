@@ -1,0 +1,36 @@
+let nombre = String 
+let ubicacion = String
+let nivel = Number
+rio = [];
+rios = [];
+
+function registroInfo() {
+    nombre = prompt('Escriba el nombre del rio: ');
+    ubicacion = prompt('Escriba la ubicacion del rio: ');
+    nivel = prompt('Escriba el nivel del rio: ');
+    rio = [nombre, ubicacion, nivel]
+    rios.push(rio);
+    }
+function mostrarAlert() {
+    
+}
+
+function buscarInfo() {
+    
+}
+
+function eliminarInfo() {
+
+}
+
+function actualizarInfo() {
+    
+}
+
+let opcion = prompt('\nMenu de opciones: \n1.Registrar informacion\n2.Mostrar rios con alerta roja\n3.Mostrar rios con alerta naranja\n4.Buscar Informacion\n5.Actualizar informacion\n6.Salir\nIngrese una opcion')
+
+
+switch (opcion) {
+    case '1':
+        registroInfo();
+}
