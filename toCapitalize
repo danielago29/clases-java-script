@@ -1,0 +1,9 @@
+et op = prompt('Ingrese el nombre');
+
+const toCapitalize = (text) => text[0].toUpperCase() + text.substring(1);
+const toCapitalizeEveryWord = (text) => {
+    return text.split(" ")                      // Separamos en un array cada palabra
+    .map(word => toCapitalize(word))          // Aplicamos el capitalizar a cada elemento
+    .join(" ");                               // Lo volvemos a unir en un string
+}
+console.log(toCapitalizeEveryWord(op));
