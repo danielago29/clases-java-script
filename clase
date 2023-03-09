@@ -1,0 +1,48 @@
+'use strict'
+//Declaracion array
+let peliculas = []
+//Declaracion e inicializacion
+let personajes = ['Iron Man'];
+//Acceder a un elemento del array por el indice
+console.log(personajes[0]);
+//Agregar un elemento al final
+personajes.push('Capitan America');
+//Agregar un elemento al inicio del array
+personajes.unshift('Pantera negra');
+console.log(personajes);
+//Recorrer un array
+personajes.forEach(function(elemento, indice, array) {
+    console.log(elemento, indice);
+})
+//Eliminar el ultimo elemento
+let ultimo = personajes.pop();
+console.warn(`Se Elimino ${ultimo}`)
+//Eliminar el primer elemento
+let primer = personajes.shift();
+console.warn(`Se Elimino ${primer}`)
+//Encontrar el índice de un elemento del Array
+let pos = personajes.indexOf('Iron Man');
+console.log(personajes);
+console.error(`La posicion de Iron Man es :  ${pos}`);
+//Eliminar un único elemento mediante su posición
+personajes.push('Capitan America');
+let elementoEliminado = personajes.splice(personajes.indexOf('Iron Man'), 1);
+console.warn(`Se Elimino ${elementoEliminado}`)
+//Eliminar varios elementos a partir de una posición
+personajes.push('Hulk');
+personajes.push('Thor');
+personajes.push('Spiderman');
+personajes.push('Ant man');
+console.log(personajes);
+let posicion = personajes.indexOf('Hulk');
+let nroElementosBorrar = 2;
+personajes.splice(posicion,nroElementosBorrar);
+console.log(personajes);
+//Longitud arreglo
+console.log(`Total de elementos en el arreglo ${personajes.length}`)
+//Busca un elemento en el array si esta retona true
+console.log(personajes.includes('Spiderman'));
+//Union de elemento de un array en una cadena
+console.log(personajes.join());
+//Ordenamiento de elementos
+console.log(personajes.sort());
