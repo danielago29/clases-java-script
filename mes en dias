@@ -1,0 +1,9 @@
+/*let year = parseInt(prompt('Ingrese año :'))
+let mes = parseInt(prompt('Ingrese mes :'))*/
+let fecha = new Date(parseInt(prompt('Ingrese año :')),parseInt(prompt('Ingrese mes :')),0);
+alert(fecha.getDate());
+let item = 0;
+do{
+    item += parseInt(prompt("Cantidad"))
+}while (confirm("Quiere agregar otro articulo"))
+alert(item);
