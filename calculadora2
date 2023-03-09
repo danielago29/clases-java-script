@@ -1,0 +1,78 @@
+function tabla(limite = Number){
+    for (i=0;i<= limite;i++){
+        console.log(`${5} * ${i} = ${5*i}`);
+    }
+}
+function tablaD(tabla=Number,limite =Number){
+    for (i=0;i<= limite;i++){
+        console.log(`${tabla} * ${i} = ${tabla*i}//`)
+    }
+}
+function tablaT(tabla=Number,limite =10){
+    for (i=0;i<= limite;i++){
+        console.log(`${tabla} * ${i} = ${tabla*i}//`)
+    }
+}
+function operacionMat(op = String,valorA=Number,valorB=Number)
+{
+    switch(op){
+        case '+':
+            return valorA+valorB;
+        default:
+            return 0;
+    }
+}
+const resultado =function operacionMat(op = String,valorA=Number,valorB=Number)
+{
+    switch(op){
+        case '+':
+            return valorA+valorB;
+        default:
+            return 0;
+    }
+};
+const operacion =function(op = String,valorA=Number,valorB=Number)
+{
+    switch(op){
+        case '+':
+            return valorA+valorB;
+        default:
+            return 0;
+    }
+};
+/*tabla(parseInt(prompt('Ingrese en numero :')))
+console.log('**************')
+tablaD(3,10);
+console.log('**************')
+tablaT(6);
+console.log('**************')
+console.log(operacionMat('+',3,4));
+console.log(typeof(operacionMat('+',3,4)));
+console.log('**************')
+console.log(resultado('+',13,4));
+console.log('**************')
+console.log(operacion('+',13,14));*/
+// fB = Función B
+/*const fB = function () {
+    console.log("Función B ejecutada.");
+  };
+  
+  // fA = Función A
+const fA = function (callback) {
+    callback();
+};
+  
+fA(fB);*/
+/*const nroDias = (year,mes) => new Date(year,mes,0).getDate();
+console.log(nroDias(parseInt(prompt('Ingrese el año')),parseInt(prompt('Ingrese el Mes'))))*/
+const text = "quiero capitalizar este texto.";
+
+const toCapitalize = (text) => text[0].toUpperCase() + text.substring(1);
+const toCapitalizeEveryWord = (text) => {
+  return text.split(" ")                      // Separamos en un array cada palabra
+    .map(word => toCapitalize(word))          // Aplicamos el capitalizar a cada elemento
+    .join(" ");                               // Lo volvemos a unir en un string
+}
+
+toCapitalize(text);            // "Los gatos dominarán el mundo."
+toCapitalizeEveryWord(text);   // "Los Gatos Dominarán El Mundo."
