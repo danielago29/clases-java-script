@@ -1,0 +1,8 @@
+let fechaNac = new Date(prompt('Ingrese fecha nacimiento mm/dd/yyyy'));
+let fechaActual = new Date();
+let diferencia = fechaActual.getTime() - fechaNac.getTime();
+let diasDeDiferencia = diferencia / 1000 / 60 / 60 / 24;
+console.log(`Total de dias de vida : ${diasDeDiferencia}`);
+const opciones = { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric' };
+console.log(`La fecha de nacimiento es : ${fechaNac.toLocaleDateString('es-CO',opciones)}`);
+console.log(fechaActual.getFullYear() - fechaNac.getFullYear());
