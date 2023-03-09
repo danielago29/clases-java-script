@@ -1,0 +1,34 @@
+et palabras = ['casa','carro','rinoceronte','elefante'];
+let indice = Math.floor(Math.random() * palabras.length);
+var palabra = palabras[indice].split("");
+let intentos = 0;
+let aciertos = 0;
+let encontro;
+let winner = false;
+console.log(palabra);
+while (intentos < palabra.length){
+    let letra = prompt('Ingrese una letra','');
+    encontro = false;
+    for(let i=0;i<palabra.length;i++){
+        if (palabra[i].includes(letra)){
+            aciertos +=1;
+            palabra[i]=palabra[i].replace(letra,'');
+            encontro = true;
+        }
+        if (aciertos == palabras[indice].length){
+            winner = true;
+            intentos=palabra.length;
+        }
+            
+    }
+    
+    encontro == false ? intentos+=1:0;
+    /*if (encontro == false)
+        intentos +=1;*/
+}
+if(winner == true){
+    console.log('Haz ganado el juego');
+}else{
+    console.log("Perdiooooo");
+}
+    
