@@ -1,21 +1,31 @@
 let nombre = String 
 let ubicacion = String
 let nivel = Number
-rio = [];
 rios = [];
 
 function registroInfo() {
     nombre = prompt('Escriba el nombre del rio: ');
     ubicacion = prompt('Escriba la ubicacion del rio: ');
-    nivel = prompt('Escriba el nivel del rio: ');
-    rio = [nombre, ubicacion, nivel]
+    nivel = parseInt(prompt('Escriba el nivel del rio: '));
+    rio = { nombre, ubicacion, nivel };
     rios.push(rio);
     }
 function mostrarAlert() {
-    
+    alerta = parseInt(prompt('¿cual lista de alerta desea ver? 1.roja, 2.naranja o 3.verde (Escribe el número correspondiente a la lista de alerta)'));
+    switch (alerta) {
+        case 1:
+            const alertaRoja = rios.filter(p => p.nivel >= 50);
+            console.table(alertaRoja);
+            break;
+        case 2:
+            const alertaNaranja = rios.filter(p => p.nivel > 30 && p.nivel < 50);
+            console.table(alertaNaranja);
+            break;
+    }
+        
 }
-
 function buscarInfo() {
+    elementoBuscar = prompt('Escriba el nombre del río a buscar');
     
 }
 
@@ -27,10 +37,51 @@ function actualizarInfo() {
     
 }
 
-let opcion = prompt('\nMenu de opciones: \n1.Registrar informacion\n2.Mostrar rios con alerta roja\n3.Mostrar rios con alerta naranja\n4.Buscar Informacion\n5.Actualizar informacion\n6.Salir\nIngrese una opcion')
+let menu = 'Menu\n';
+menu += '1.Registrar informacion\n';
+menu += '2.Mostrar alertas\n';
+menu += '3.Buscar Informacion\n';
+menu += '4.Eliminar informacion\n';
+menu += '5.Actualizar informacion\n';
+menu += '6.Salir\n';
+menu += 'Ingrese una opcion\n\n';
 
 
-switch (opcion) {
-    case '1':
-        registroInfo();
-}
+let opcion = 0;
+
+do {
+    opcion = parseInt(prompt(menu));    
+        switch (opcion){
+            case 1:
+                registroInfo();
+                console.log (rios)
+                break;
+                                              
+            case 2:
+                mostrarAlert();
+                break;               
+            
+            case 3:
+                buscarInfo();
+                break;
+            
+            case 4:
+                eliminarInfo();
+                break; 
+                
+            case 5:
+                actualizarInfo();
+                break;
+            
+            case 6:
+                alert('Programa finalizado');
+                break;
+                
+            default: 
+                alert('Opcion no valida');
+        }
+    } while (opcion != 6);
+
+    
+
+       
