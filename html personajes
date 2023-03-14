@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Swiper CSS -->
+     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="js/ejercicio.js" defer></script>
+    <title>Ejemplo de appendChild </title>
+</head>
+<body>
+<nav class="navegacion">
+    <div class = 'wrap'>
+        <ul class = 'tabs'>
+            <li><a href="#tab1"><span class="fa fa-home"></span><span>Agregar Personajes</span></a></li>
+            <li><a href="#tab2"><span class="fa fa-group"></span><span>Ver Personajes</span></a></li>
+        </ul>
+
+    </div>
+
+
+    <section class="ver-personajes">
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="/imagenes/bulbasaur.png" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Bulbasaur</h2>
+                            <p class="description">Puede sobrevivir largo tiempo sin probar bocado gracias a los nutrientes que guarda en el bulbo del lomo</p>
+
+                            <button class="button">Ver Más</s></button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="/imagenes/butterfree.png" alt="butterfree" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Butterfree</h2>
+                            <p class="description">Tiene una capacidad moderada de utilizar poderes telepáticos y ataques psíquicos, tales como confusión o psicorrayo</p>
+
+                            <button class="button">Ver Más</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="/imagenes/clefable.png" alt="charmander" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Clefairy</h2>
+                            <p class="description">Sus alas le permiten volar para acumular luz lunar. Es difícil de encontrar. </p>
+
+                            <button class="button">Ver Más</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="/imagenes/jiglypuff.png" alt="Jiglypuff" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Jiglypuff</h2>
+                            <p class="description">usa la habilidad que tiene para cantar con la longitud de onda necesaria para adormecer a su rival. Cuando este Pokémon canta, no para nunca para respirar</p>
+
+                            <button class="button">Ver más</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="/imagenes/sandsshrew.png"alt="Sandshrew" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Sandshrew</h2>
+                            <p class="description">Es capaz de absorber agua y no perder ni una gota, algo que le permite sobrevivir en el desierto</p>
+
+                            <button class="button">Ver mas</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="/imagenes/squirtie.png" alt="Squirtle" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Squirtle</h2>
+                            <p class="description">su forma redondeada y sus hendiduras reducen su resistencia al agua y le permiten nadar más rápido. Cuando se esconde en el caparazón, dispara agua a una presión increíble </p>
+
+                            <button class="button">Ver mas</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="/imagenes/vulpix.png" alt="squirtie" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Vulpix</h2>
+                            <p class="description">Puede controlar el fuego a su antojo y libera llamas por la boca.</p>
+
+                            <button class="button">Ver más</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="/imagenes/wigglytull.png" alt="Wigglytuff" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Wigglytuff</h2>
+                            <p class="description">l tamaño de su cuerpo cuando se infla es monstruosamente grande, y es bastante efectivo para espantar a sus atacantes</p>
+
+                            <button class="button">View More</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="/imagenes/charmander.png" alt="wigglytull" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Charmander</h2>
+                            <p class="description">Potencia los ataques de tipo Fuego en un apuro.</p>
+
+                            <button class="button">Ver más</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>    
+    
+</body> 
+<!-- Swiper JS -->
+  <!--Uncomment this line-->
+<script src="/js/swiper-bundle.min.js.js"></script>
+
+<!-- JavaScript -->
+  <!--Uncomment this line-->
+<script src="/js/ejercicio.js"></script>
+</html>
